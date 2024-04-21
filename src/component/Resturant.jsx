@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Menu from "./MenuApi.jsx";
 import MenuCard from "./MenuCard";
-import Navbar from "./Navbar.jsx";
+import NavBar from "./NavBar.jsx";
 
 const uniqueList = [
   ...new Set(
@@ -34,7 +34,7 @@ const Resturant = () => {
 
   return (
     <>
-      <Navbar filterItem={filterItem} menuList={menuList} />
+      <NavBar filterItem={filterItem} menuList={menuList} />
       <MenuCard menuData={menuData} />
     </>
   );
